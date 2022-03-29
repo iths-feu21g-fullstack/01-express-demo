@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 	res.send('You got me!')
 })
 
-
+// Sätt igång servern
 app.listen(PORT, () => {
 	console.log(`Server is listening on port ${PORT}.`)
 })
