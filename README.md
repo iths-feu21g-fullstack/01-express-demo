@@ -2,18 +2,41 @@
 
 ## Skapa projekt
 
-1. Skapa package.json-fil
+1. Skapa ny mapp
 
-	`npm init -y`
+	```
+	mkdir express-demo
+	cd express-demo/
+	```
 
-2. Installera Express
+2. Skapa package.json-fil
 
-	`npm install express`
+	```
+	npm init -y
+	```
 
-3. Starta serven, två alternativ
+1. Skapa ett git-repo med .gitignore. Lägg till filerna.
+
+	```
+	git init
+	echo "node_modules/" > .gitignore
+	git add --all
+	git commit -m "Initial files"
+	```
+
+1. Installera Express
+
+	```
+	npm install express
+	```
+
+1. Skriv koden...
+   
+2. Starta serven, två alternativ
 
 	```
 	node server.js
-	npm run namn-på-skriptet```
+	npm run namn-på-skriptet
+	```
 
-4. Öppna localhost:1337 i webbläsaren!
+1. Öppna localhost:1337 i webbläsaren!
