@@ -1,5 +1,7 @@
 // importera paketet Express
 const express = require('express')
+// const { get as getGuestbook } = require('./routes/guestbook.js')
+const guestbook = require('./routes/guestbook.js')
 const PORT = 1337
 
 // "app" är webbservern som vi bygger
@@ -16,6 +18,14 @@ app.get('/icecream', (req, res) => {
 app.get('/infinite', (req, res) => {
 	console.log('Anropar inte res.send')
 })
+
+
+
+app.get('/guestbook', guestbook.get)
+// x++ returnerar gamla värdet på x
+// ++x returnerar nya värdet på x
+
+
 
 // Sätt igång servern
 app.listen(PORT, () => {
