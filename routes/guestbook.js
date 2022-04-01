@@ -10,4 +10,14 @@ router.get('/', (req, res) => {
 	res.send(`Du är besökare nummer ${visitorCount}.`)	
 })
 
+router.get('/remove', (req, res) => {
+	visitorCount--
+	res.send(`Tog bort en besökare.`)
+})
+
+router.get('*', (req, res) => {
+	res.send(`Felaktig URL, försök igen!`)
+})
+
+
 module.exports = router
