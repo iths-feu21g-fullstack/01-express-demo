@@ -35,20 +35,20 @@ app.get('/fruits', (req, res) => {
 
 
 app.get('/style.css', (req, res) => {
-	console.log(__dirname + '/public/style.css')
+	// console.log(__dirname + '/public/style.css')
 	res.sendFile(__dirname + '/public/style.css')
 })
 app.get('/index.html', (req, res) => {
-	console.log(__dirname + '/public/index.html')
+	// console.log(__dirname + '/public/index.html')
 	res.sendFile(__dirname + '/public/index.html')
 })
 app.get('/script.js', (req, res) => {
-	console.log(__dirname + '/public/script.js')
+	// console.log(__dirname + '/public/script.js')
 	res.sendFile(__dirname + '/public/script.js')
 })
 
 
-app.get('/guestbook', guestbook.get)
+app.use('/guestbook', guestbook)
 // x++ returnerar gamla värdet på x
 // ++x returnerar nya värdet på x
 
